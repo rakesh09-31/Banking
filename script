@@ -1,0 +1,16 @@
+
+let balance = 1000;
+
+function deposit() {
+    let amount = Number(document.getElementById("amount").value);
+
+    if (amount > 0) {
+        balance += amount;
+        document.getElementById("message").innerHTML = "Amount Deposited Successfully";
+    } else {
+        document.getElementById("message").innerHTML = "Enter Valid Amount";
+    }
+
+    document.getElementById("balance").innerHTML = balance;
+}
+
